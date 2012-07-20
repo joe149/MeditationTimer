@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D84F400515B8EDB600D8D2AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84F400415B8EDB600D8D2AC /* UIKit.framework */; };
+		D84F400715B8EDB600D8D2AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84F400615B8EDB600D8D2AC /* Foundation.framework */; };
+		D84F400915B8EDB600D8D2AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84F400815B8EDB600D8D2AC /* CoreGraphics.framework */; };
+		D84F400F15B8EDB600D8D2AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D84F400D15B8EDB600D8D2AC /* InfoPlist.strings */; };
+		D84F401115B8EDB600D8D2AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F401015B8EDB600D8D2AC /* main.m */; };
+		D84F401515B8EDB600D8D2AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F401415B8EDB600D8D2AC /* AppDelegate.m */; };
+		D84F401815B8EDB600D8D2AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F401715B8EDB600D8D2AC /* ViewController.m */; };
+		D84F401B15B8EDB600D8D2AC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84F401915B8EDB600D8D2AC /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D84F400015B8EDB600D8D2AC /* MeditationTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84F400415B8EDB600D8D2AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D84F400615B8EDB600D8D2AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D84F400815B8EDB600D8D2AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D84F400C15B8EDB600D8D2AC /* MeditationTimer-Info.plist */ = {isa = PBXFileReference; path = "MeditationTimer-Info.plist"; sourceTree = "<group>"; };
+		D84F400E15B8EDB600D8D2AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D84F401015B8EDB600D8D2AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D84F401215B8EDB600D8D2AC /* MeditationTimer-Prefix.pch */ = {isa = PBXFileReference; path = "MeditationTimer-Prefix.pch"; sourceTree = "<group>"; };
+		D84F401315B8EDB600D8D2AC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D84F401415B8EDB600D8D2AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D84F401615B8EDB600D8D2AC /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		D84F401715B8EDB600D8D2AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D84F401A15B8EDB600D8D2AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D84F3FFD15B8EDB600D8D2AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84F400515B8EDB600D8D2AC /* UIKit.framework in Frameworks */,
+				D84F400715B8EDB600D8D2AC /* Foundation.framework in Frameworks */,
+				D84F400915B8EDB600D8D2AC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D84F3FF515B8EDB600D8D2AC = {
+			isa = PBXGroup;
+			children = (
+				D84F400A15B8EDB600D8D2AC /* MeditationTimer */,
+				D84F400315B8EDB600D8D2AC /* Frameworks */,
+				D84F400115B8EDB600D8D2AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D84F400115B8EDB600D8D2AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D84F400015B8EDB600D8D2AC /* MeditationTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D84F400315B8EDB600D8D2AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D84F400415B8EDB600D8D2AC /* UIKit.framework */,
+				D84F400615B8EDB600D8D2AC /* Foundation.framework */,
+				D84F400815B8EDB600D8D2AC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D84F400A15B8EDB600D8D2AC /* MeditationTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D84F401315B8EDB600D8D2AC /* AppDelegate.h */,
+				D84F401415B8EDB600D8D2AC /* AppDelegate.m */,
+				D84F401615B8EDB600D8D2AC /* ViewController.h */,
+				D84F401715B8EDB600D8D2AC /* ViewController.m */,
+				D84F401915B8EDB600D8D2AC /* ViewController.xib */,
+				D84F400B15B8EDB600D8D2AC /* Supporting Files */,
+			);
+			path = MeditationTimer;
+			sourceTree = "<group>";
+		};
+		D84F400B15B8EDB600D8D2AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D84F400C15B8EDB600D8D2AC /* MeditationTimer-Info.plist */,
+				D84F400D15B8EDB600D8D2AC /* InfoPlist.strings */,
+				D84F401015B8EDB600D8D2AC /* main.m */,
+				D84F401215B8EDB600D8D2AC /* MeditationTimer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D84F3FFF15B8EDB600D8D2AC /* MeditationTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84F401E15B8EDB600D8D2AC /* Build configuration list for PBXNativeTarget "MeditationTimer" */;
+			buildPhases = (
+				D84F3FFC15B8EDB600D8D2AC /* Sources */,
+				D84F3FFD15B8EDB600D8D2AC /* Frameworks */,
+				D84F3FFE15B8EDB600D8D2AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeditationTimer;
+			productName = MeditationTimer;
+			productReference = D84F400015B8EDB600D8D2AC /* MeditationTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D84F3FF715B8EDB600D8D2AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D84F3FFA15B8EDB600D8D2AC /* Build configuration list for PBXProject "MeditationTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D84F3FF515B8EDB600D8D2AC;
+			productRefGroup = D84F400115B8EDB600D8D2AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D84F3FFF15B8EDB600D8D2AC /* MeditationTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D84F3FFE15B8EDB600D8D2AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84F400F15B8EDB600D8D2AC /* InfoPlist.strings in Resources */,
+				D84F401B15B8EDB600D8D2AC /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D84F3FFC15B8EDB600D8D2AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84F401115B8EDB600D8D2AC /* main.m in Sources */,
+				D84F401515B8EDB600D8D2AC /* AppDelegate.m in Sources */,
+				D84F401815B8EDB600D8D2AC /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D84F400D15B8EDB600D8D2AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84F400E15B8EDB600D8D2AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D84F401915B8EDB600D8D2AC /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84F401A15B8EDB600D8D2AC /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D84F401C15B8EDB600D8D2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D84F401D15B8EDB600D8D2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D84F401F15B8EDB600D8D2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeditationTimer/MeditationTimer-Prefix.pch";
+				INFOPLIST_FILE = "MeditationTimer/MeditationTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D84F402015B8EDB600D8D2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeditationTimer/MeditationTimer-Prefix.pch";
+				INFOPLIST_FILE = "MeditationTimer/MeditationTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D84F3FFA15B8EDB600D8D2AC /* Build configuration list for PBXProject "MeditationTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84F401C15B8EDB600D8D2AC /* Debug */,
+				D84F401D15B8EDB600D8D2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84F401E15B8EDB600D8D2AC /* Build configuration list for PBXNativeTarget "MeditationTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84F401F15B8EDB600D8D2AC /* Debug */,
+				D84F402015B8EDB600D8D2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D84F3FF715B8EDB600D8D2AC /* Project object */;
+}
