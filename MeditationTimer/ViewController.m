@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVAudioPlayer.h>
 
 @interface ViewController ()
 
@@ -14,22 +15,76 @@
 
 @implementation ViewController
 
+@synthesize cancelButton;
+@synthesize timePicker;
+@synthesize pauseButton;
+@synthesize startButton;
+
+#pragma mark Utility methods
+- (AVAudioPlayer *) soundNamed:(NSString *)name {
+    NSString * path;
+    AVAudioPlayer * snd;
+    NSError * err;
+    
+    path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:name];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+        NSURL * url = [NSURL fileURLWithPath:path];
+        snd = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+        if (! snd) {
+            NSLog(@"Sound named '%@' had error %@", name, [err localizedDescription]);
+        } else {
+            [snd prepareToPlay];
+        }
+    } else {
+        NSLog(@"Sound file '%@' doesn't exist at '%@'", name, path);
+    }
+    
+    return snd;
+}
+
+#pragma mark UIPickerViewDataSource methods
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    
+    return 1;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return 10;
+}
+
+#pragma mark View LifeCycle methods
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    // THIS IS A TEST CHANGE.
 }
 
 - (void)viewDidUnload
 {
+    [self setStartButton:nil];
+    [self setPauseButton:nil];
+    [self setCancelButton:nil];
+    [self setTimePicker:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    } else {
+        return YES;
+    }
+}
+
+#pragma mark Event messages
+- (IBAction)startTouched:(id)sender {
+}
+
+- (IBAction)pauseTouched:(id)sender {
+}
+
+- (IBAction)cancelTouched:(id)sender {
 }
 
 @end

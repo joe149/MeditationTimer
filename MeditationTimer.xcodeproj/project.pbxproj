@@ -15,6 +15,7 @@
 		D84F401515B8EDB600D8D2AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F401415B8EDB600D8D2AC /* AppDelegate.m */; };
 		D84F401815B8EDB600D8D2AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F401715B8EDB600D8D2AC /* ViewController.m */; };
 		D84F401B15B8EDB600D8D2AC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84F401915B8EDB600D8D2AC /* ViewController.xib */; };
+		D87E9AF015BB39FE0072806E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87E9AEF15BB39FE0072806E /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D84F401615B8EDB600D8D2AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D84F401715B8EDB600D8D2AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D84F401A15B8EDB600D8D2AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		D87E9AEF15BB39FE0072806E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87E9AF015BB39FE0072806E /* AVFoundation.framework in Frameworks */,
 				D84F400515B8EDB600D8D2AC /* UIKit.framework in Frameworks */,
 				D84F400715B8EDB600D8D2AC /* Foundation.framework in Frameworks */,
 				D84F400915B8EDB600D8D2AC /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +53,7 @@
 		D84F3FF515B8EDB600D8D2AC = {
 			isa = PBXGroup;
 			children = (
+				D87E9AEF15BB39FE0072806E /* AVFoundation.framework */,
 				D84F400A15B8EDB600D8D2AC /* MeditationTimer */,
 				D84F400315B8EDB600D8D2AC /* Frameworks */,
 				D84F400115B8EDB600D8D2AC /* Products */,
@@ -272,6 +276,7 @@
 				D84F402015B8EDB600D8D2AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
