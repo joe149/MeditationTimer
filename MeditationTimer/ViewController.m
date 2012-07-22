@@ -43,6 +43,23 @@
     return snd;
 }
 
+
+/*
+ * This method starts a one shot timer of random (< 1 minute, < 5 minutes) duration.
+ * Each time the timer fires, we play a 'tick' sound. 
+*/
+- (void) startTicker {
+    //start random timer
+}
+
+/*
+ * Plays tick, invalidates timer, and starts timer again
+ */
+- (void) handleTickTimer {
+    [self startTicker];
+}
+
+
 #pragma mark UIPickerViewDataSource methods
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     
@@ -52,10 +69,12 @@
     return 10;
 }
 
+
 #pragma mark View LifeCycle methods
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self startTicker];
 }
 
 - (void)viewDidUnload
