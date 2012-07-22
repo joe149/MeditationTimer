@@ -19,6 +19,7 @@
 @synthesize timePicker;
 @synthesize pauseButton;
 @synthesize startButton;
+@synthesize ticker = ticker_;
 
 #pragma mark Utility methods
 - (AVAudioPlayer *) soundNamed:(NSString *)name {
@@ -50,12 +51,20 @@
 */
 - (void) startTicker {
     //start random timer
+    [self setTicker:[NSTimer scheduledTimerWithTimeInterval:6
+                                               target:self selector:@selector(handleTickTimer:)
+                                             userInfo:nil repeats:NO]];
+    
+   
 }
 
 /*
  * Plays tick, invalidates timer, and starts timer again
  */
-- (void) handleTickTimer {
+- (void) handleTickTimer:(NSTimer*) timer {
+    // in another method 
+    [ticker_ invalidate];
+    [self setTicker:nil];
     [self startTicker];
 }
 
@@ -83,6 +92,9 @@
     [self setPauseButton:nil];
     [self setCancelButton:nil];
     [self setTimePicker:nil];
+    //Do we check nils?
+    [ticker_ invalidate];
+    [self setTicker:nil];    
     [super viewDidUnload];
 
 }

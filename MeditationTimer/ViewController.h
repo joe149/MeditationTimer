@@ -22,4 +22,5 @@
 @property (assign, nonatomic) IBOutlet UIButton *pauseButton;
 @property (assign, nonatomic) IBOutlet UIButton *startButton;
 @property (assign, nonatomic) IBOutlet UIButton *cancelButton;
+@property (assign, nonatomic) NSTimer* ticker;
 @end
